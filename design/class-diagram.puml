@@ -1,0 +1,16 @@
+@startuml
+
+note right of Singleton : "The uniqueInstance class variable\nholds our one and only \ninstance of Singleton."
+note bottom of Singleton : "A class implementing the Singleton\nPattern is more than a Singleton; it\n is a general purpose class with its\n own set of data and methods."
+note left of Singleton : "The getInstance() methods is static,\nwhich means it's a class method, so you\ncan conveniently access this method\nfrom any where in your code using\nSingleton.getInstance().That's just as\neasy as accessing a global variable, but\nwe get benefits like lazy instantiation\nfrom the Singleton."
+
+class Singleton {
+    static uniqueInstance
+    //Other useful Signleton data...
+__
+    static getInstance()
+    //Other userful Signleton methods...
+}
+
+
+@enduml
